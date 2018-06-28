@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>OCCIware</title>
+  
+	<link type="text/css" rel="stylesheet" media="all" href="/resources/css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+	<!--[if lt IE 9]>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+	<![endif]-->
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="/resources/js/helpers.js"></script>
+</head>
+
+<body>
+	<div id="forkongithub"><a href="https://github.com/occiware/occiware.github.io">Fork me on GitHub</a></div>
+
+	<div id="menu">
+		<p id="logo">
+			<a href="/"><img src="/resources/images/logo.png" alt="OCCIWare's logo" /></a>
+		</p>
+		<ul>
+			<li  class="active"><a href="/">Home</a></li>
+			<li ><a href="/content/user-guides/snapshot/index.html">User Guide</a></li>
+			<li ><a href="/content/developer-guides/snapshot/index.html">Developer Guide</a></li>
+			<li ><a href="/content/links.html">Links</a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<h1 id="page-title">OCCIware</h1>
+		
+		
+		
+		
+	
+		<h1 id="a-dev-intro-to-occiware">A dev intro to Occiware</h1>
+
+<h2 id="what-is-it-about-">What is it about ?</h2>
+
+<h3 id="the-occiware-project">The OCCIware project</h3>
+
+<p>You will find a clear and short explanation of the goals and inner workings of Occiware on the <a href="http://occinterface.herokuapp.com/">Occinterface Demo app page</a>, in the “The OCCIware project” section.</p>
+
+<blockquote>
+  <p>Useful note for what follows : to download Slideshare presentations as .pdfs without an account, you may want to use something like <a href="http://grub.cballenar.me/">Slidegrubber</a>.</p>
+</blockquote>
+
+<p>If you want to know more, the latest presentation on Occiware made by Marc Dutoo gives a good overview about what this is all about : <a href="https://fr.slideshare.net/mdutoo/occiwareposs-2016-an-extensible-standard-xaas-cloud-consumer-platform">Occiwareposs 2016 - An extensible standard xaas cloud consumer platform</a>. In order to better understand the slides, you may want to watch the <a href="https://www.youtube.com/watch?v=HuDEbpC0eSw">video of the presentation on Youtube</a>.</p>
+
+<p>You might also want to read the overall presentation by Marc Dutoo : <a href="https://fr.slideshare.net/mdutoo/eclipsecon-2016-occiware-a-cloud-api-to-rule-them-all">Eclipsecon 2016 - Occiware, a cloud api to rule them all</a>.</p>
+
+<p>Watching the <a href="https://www.youtube.com/watch?v=cJszIZP7_N8">presentation’s video of Erocci</a> that followed Marc Dutoo’s talk might help you to understand more about OCCI.</p>
+
+<p>To better understand what OCCI is, the best thing to do would be to take a quick look at the <a href="http://occi-wg.org/about/specification/">specification of the norm</a>.</p>
+
+<h2 id="what-am-i-going-to-find-on-this-website-">What am I going to find on this website ?</h2>
+
+<p>This is the community website for OCCIware : it contains documentation for both users and developers, as well as other technical resources.</p>
+
+<h2 id="what-are-the-occiware-framework-components-">What are the Occiware framework components ?</h2>
+
+<p>You will find the many components of the project in the <a href="https://github.com/occiware">Github Organization</a>. Below you will find a quick description for the core projects.</p>
+
+<h3 id="occi-studiohttpsgithubcomocciwareocci-studio"><a href="https://github.com/occiware/OCCI-Studio">OCCI-Studio</a></h3>
+
+<p>Throughout the documentation, you will see references to either CloudDesigner, Occiware Studio or Occi-Studio. Actually, these three terms refer to the very same piece of software : the flavor of Eclipse that makes up the Occiware framework.</p>
+
+<p>Actually, the <a href="https://github.com/occiware/OCCI-Studio">OCCI-Studio repository</a> is for a future version of the studio, but for now all the current code is currently being held in the <a href="https://github.com/occiware/ecore">Ecore repository</a>. The OCCI-Studio will actually be separated into several different projects, including itself and others like Docker-Studio to separate capabilities that are not directly related.</p>
+
+<p>See the <a href="/content/developer-guides/snapshot/studio-setting-up-the-environment.html">“Setting up the Environment”</a>
+ page to install it.</p>
+
+<h3 id="martserverhttpsgithubcomocciwaremartserver"><a href="https://github.com/occiware/MartServer">MartServer</a></h3>
+
+<p>To put it simply, the MartServer is a headless implementation of the Occi-Studio : no Eclipse tools or bindings here. It is a “for-prod” project. It is a simpler Java equivalent to the <a href="https://github.com/erocci/erocci">Erocci</a> Erlang implementation, though Erocci is more scalable thanks to the very nature of the Erlang language.</p>
+
+	</div>
+	<div class="clear"></div>
+
+	<div id="footer">
+		Copyright &copy; 2015-2018, OCCIware Partners
+	</div>
+
+</body>
+</html>
