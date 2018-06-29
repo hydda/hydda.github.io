@@ -1,6 +1,6 @@
 ---
 layout: page
-title: User Guide
+title: Guide Utilisateur
 menu: user-guides
 version: 1.0
 released: false

@@ -86,12 +86,12 @@ a:hover {
 /* Menu */
 
 #logo {
-	margin-bottom: 24px;
+	argin-bottom: 24px;
 }
 
 #logo img {
-	max-width: 180px;
-	margin-left: -12px;
+	max-width: 400px;
+	margin-left: 10px;
 }
 
 #menu {
@@ -118,7 +118,7 @@ a:hover {
 /* Content */
 
 #content {
-	padding: 8px 18px;
+	padding: 40px 18px;
 	margin-left: 225px;
 }
 

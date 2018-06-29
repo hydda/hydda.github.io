@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Developer Guide
+title: Guide développeur
 menu: dev-guides
 version: 1.0
 released: false
