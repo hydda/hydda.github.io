@@ -28,17 +28,19 @@
 		</p>
 		<ul>
 			<li {% if page.menu == "home" %} class="active"{% endif %}><a href="/">Accueil</a></li>
-			<li {% if page.menu == "user-guides" %} class="active"{% endif %}><a href="/content/user-guides/snapshot/index.html">Guide Utilisateur</a></li>
-			<li {% if page.menu == "dev-guides" %} class="active"{% endif %}><a href="/content/developer-guides/snapshot/index.html">Guide Dévéloppeur</a></li>
-			<li {% if page.menu == "links" %} class="active"{% endif %}><a href="/content/links.html">Liens</a></li>
+			<li {% if page.menu == "sous-projets" %} class="active"{% endif %}><a href="/content/sous-projets/index.html">Sous Projets</a></li>
+			<li {% if page.menu == "use-case" %} class="active"{% endif %}><a href="/content/use-case/index.html">Cas d'usage</a></li>
 			<li {% if page.menu == "publications" %} class="active"{% endif %}><a href="/content/publications.html">Publications</a></li>
+			<li {% if page.menu == "partenaires" %} class="active"{% endif %}><a href="/content/partenaires.html">Partenaires</a></li>
+			<li {% if page.menu == "links" %} class="active"{% endif %}><a href="/content/links.html">Liens</a></li>
+			
 		</ul>
 	</div>
 
 	<div id="content">
 		<h1 id="page-title">{{ page.title }}</h1>
 		
-		{% if page.menu == "user-guides" or page.menu == "user-guides" %}
+		<!--{% if page.menu == "user-guides" or page.menu == "user-guides" %}
 			{% if page.released == "true" %}
 			<p>
 				<span class="glyphicon glyphicon-flag"></span>
@@ -57,7 +59,21 @@
 				pour la version snapshot du projet HYDDA.
 			</p>
 			{% endif %}
+		{% endif %}-->
+		
+		{% if page.menu == "sous-projets" or page.menu == "use-case" %}
+			
+			<p>
+				<span class="glyphicon glyphicon-flag"></span>
+				{% if page.menu == "sous-projets" %}Les différents sous-projets{% endif %}
+				{% if page.menu == "use-case" %}Les cas d'usage du projet HYDDA{% endif %}
+				{{ page.version }}.
+			</p>
+			
 		{% endif %}
+
+
+
 		
 		{% if page.cat != blank %}
 			<p>
