@@ -86,7 +86,7 @@ a:hover {
 /* Menu */
 
 #logo {
-	argin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 #logo img {
@@ -112,6 +112,7 @@ a:hover {
 
 #menu li.active, #menu li.active a {
 	background-color: #00ADE6;
+	/*background-color: gray;*/
 	color: white;
 }
 
@@ -120,6 +121,8 @@ a:hover {
 #content {
 	padding: 40px 18px;
 	margin-left: 225px;
+	font-size: 20px;
+	text-align: justify;
 }
 
 #content h1 {
@@ -166,3 +169,5 @@ a:hover {
 	font-size: 11px;
 	text-align: center;
 }
+
+
