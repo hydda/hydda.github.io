@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{ page.title }}</title>
+  
+	<link type="text/css" rel="stylesheet" media="all" href="/resources/css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+	<!--[if lt IE 9]>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+	<![endif]-->
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="/resources/js/helpers.js"></script>
+
+</head>
+
+<body>
+	<div id="forkongithub"><a href="https://github.com/hydda/hydda.github.io">Source sur GitHub</a></div>
+
+	<div id="menu">
+		<p id="logo">
+			<a href="/"><img src="/resources/images/logo.png" alt="HYDDA's logo" /></a>
+		</p>
+		<ul>
+			<li {% if page.menu == "home" %} class="active"{% endif %}><a href="/">Accueil</a></li>
+			<li {% if page.menu == "sous-projets" %} class="active"{% endif %}><a href="/content/sous-projets/index.html">Sous Projets</a></li>
+			<li {% if page.menu == "use-case" %} class="active"{% endif %}><a href="/content/use-case/index.html">Cas d'usage</a></li>
+			<li {% if page.menu == "publications" %} class="active"{% endif %}><a href="/content/publications.html">Publications</a></li>
+			<li {% if page.menu == "partenaires" %} class="active"{% endif %}><a href="/content/partenaires.html">Partenaires</a></li>
+			<li {% if page.menu == "news" %} class="active"{% endif %}><a href="/content/news.html">News</a></li>
+			<li {% if page.menu == "links" %} class="active"{% endif %}><a href="/content/links.html">Liens</a></li>
+			
+		</ul>
+	</div>
+
+	<div id="content">
+		<h1 id="page-title">{{ page.title }}</h1>
+		
+		<!--{% if page.menu == "user-guides" or page.menu == "user-guides" %}
+			{% if page.released == "true" %}
+			<p>
+				<span class="glyphicon glyphicon-flag"></span>
+				Le 
+				{% if page.menu == "user-guides" %}guide utilisateur{% endif %}
+				{% if page.menu == "dev-guides" %}guide développeur{% endif %}
+				pour HYDDA
+				{{ page.version }}.
+			</p>
+			{% else %}
+			<p>
+				<span class="glyphicon glyphicon-flag"></span>
+				Le
+				{% if page.menu == "user-guides" %}guide utilisateur{% endif %}
+				{% if page.menu == "dev-guides" %}guide développeur{% endif %}
+				pour la version snapshot du projet HYDDA.
+			</p>
+			{% endif %}
+		{% endif %}-->
+		
+		<!--{% if page.menu == "sous-projets" or page.menu == "use-case" %}
+			
+			<p>
+				<span class="glyphicon glyphicon-flag"></span>
+				{% if page.menu == "sous-projets" %}Les différents sous-projets{% endif %}
+				{% if page.menu == "use-case" %}Les cas d'usage du projet HYDDA{% endif %}
+				{{ page.version }}.
+			</p>
+			
+		{% endif %}
+
+		
+		{% if page.menu == "news" %}
+
+			<div class="timeline">
+  				<div class="container left">
+    					<div class="content">
+      						<h2>2017</h2>
+      							<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    					</div>
+  				</div>
+  				<div class="container right">
+    					<div class="content">
+      						<h2>2016</h2>
+      							<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    					</div>
+ 				 </div>
+			</div>
+		{% endif %}-->
+
+		{% if page.cat != blank %}
+			<p>
+				<a href="index.html">{{ page.cat }}</a> &raquo; <a href="#">{{ page.title }}</a>
+			</p>
+			<br />
+		{% endif %}
+	
+		{{content}}
+	</div>
+
+	<!--<div id="body">
+		<div id="feedControl">Loading...</div>
+	</div>-->
+
+	<div class="clear"></div>
+
+	<div id="footer">
+		Copyright &copy; 2017-{{ site.time | date: '%Y' }}, HYDDA Partners
+	</div>
+
+</body>
+</html>

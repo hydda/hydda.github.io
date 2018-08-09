@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ page.title }}</title>
+<title>News</title>
 <link type="text/css" rel="stylesheet" media="all" href="/resources/css/timeline-style.css" />
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />-->
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -18,29 +18,72 @@
 			<a href="/"><img src="/resources/images/logo.png" alt="HYDDA's logo" /></a>
 		</p>-->
 		<ul>
-			<li {% if page.menu == "home" %} class="active"{% endif %}><a href="/">Accueil</a></li>
-			<li {% if page.menu == "sous-projets" %} class="active"{% endif %}><a href="/content/sous-projets/index.html">Sous Projets</a></li>
-			<li {% if page.menu == "use-case" %} class="active"{% endif %}><a href="/content/use-case/index.html">Cas d'usage</a></li>
-			<li {% if page.menu == "publications" %} class="active"{% endif %}><a href="/content/publications.html">Publications</a></li>
-			<li {% if page.menu == "partenaires" %} class="active"{% endif %}><a href="/content/partenaires.html">Partenaires</a></li>
-			<li {% if page.menu == "news" %} class="active"{% endif %}><a href="/content/news.html">News</a></li>
-			<li {% if page.menu == "links" %} class="active"{% endif %}><a href="/content/links.html">Liens</a></li>
+			<li ><a href="/">Accueil</a></li>
+			<li ><a href="/content/sous-projets/index.html">Sous Projets</a></li>
+			<li ><a href="/content/use-case/index.html">Cas d'usage</a></li>
+			<li ><a href="/content/publications.html">Publications</a></li>
+			<li ><a href="/content/partenaires.html">Partenaires</a></li>
+			<li  class="active"><a href="/content/news.html">News</a></li>
+			<li ><a href="/content/links.html">Liens</a></li>
 			
 		</ul>
 	</div>
 	<div id="content">
-		<h1 id="page-title">{{ page.title }}</h1>
+		<h1 id="page-title">News</h1>
 		
 
 
-		{% if page.cat != blank %}
-			<p>
-				<a href="index.html">{{ page.cat }}</a> &raquo; <a href="#">{{ page.title }}</a>
-			</p>
-			<br />
-		{% endif %}
+		
 	
-		{{content}}
+		<div class="timeline">
+<!-- *********  -->
+<div class="container right">
+
+<div class="content">
+
+**05/09/2018** réunion de fin sprint7
+
+
+</div>
+
+</div>
+<!-- *********  -->
+<div class="container left">
+
+<div class="content">
+
+Réunion plénière à Nantes 25-26 Juin 2018. 
+
+</div>
+</div>
+<!-- *********  -->
+
+<div class="container right">
+
+<div class="content">
+
+Réunion de fin de Sprint 6
+
+
+</div>
+
+</div>
+<!-- *********  -->
+
+<div class="container left">
+
+<div class="content">
+
+Le papier "XXXX" a été accepté à la conférence XXXXX.
+
+</div>
+
+</div>
+<!-- *********  -->
+
+</div>
+
+
 	</div>
 
 
@@ -50,7 +93,7 @@
 		<p id="logo">
 			<a href="/"><img src="/resources/images/logo.png" alt="HYDDA's logo" /></a>
 		</p>
-		Copyright &copy; 2017-{{ site.time | date: '%Y' }}, HYDDA Partners
+		Copyright &copy; 2017-2018, HYDDA Partners
 	</div>
 
 

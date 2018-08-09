@@ -7,7 +7,17 @@
 
 html, body {
 	height: 100%;
+	background-color: #474e5d;
+	color: white;
+	font-family: Helvetica, sans-serif;
 }
+
+/*body {
+	 height: 100%;
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+}*/
+
 
 a, a:visited, a:link {
 	color: #00ADE6;
@@ -86,7 +96,7 @@ a:hover {
 /* Menu */
 
 #logo {
-	argin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 #logo img {
@@ -97,7 +107,8 @@ a:hover {
 #menu {
 	position: fixed;
 	width: 200px;
-	padding-left: 4px;
+	padding-left: 10px;
+	margin-top: 140px;
 }
 
 #menu li {
@@ -107,11 +118,12 @@ a:hover {
 	border: solid black 1px;
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 	padding: 6px 19px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 }
 
 #menu li.active, #menu li.active a {
-	background-color: #00ADE6;
+	/*background-color: #00ADE6;*/
+	background-color: gray;
 	color: white;
 }
 
@@ -120,6 +132,8 @@ a:hover {
 #content {
 	padding: 40px 18px;
 	margin-left: 225px;
+	font-size: 20px;
+	text-align: justify;
 }
 
 #content h1 {
@@ -158,6 +172,7 @@ a:hover {
 	font-style: italic;
 }
 
+
 /* Footer */
 
 #footer {
@@ -166,3 +181,5 @@ a:hover {
 	font-size: 11px;
 	text-align: center;
 }
+
+

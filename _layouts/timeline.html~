@@ -50,6 +50,7 @@
 		<p id="logo">
 			<a href="/"><img src="/resources/images/logo.png" alt="HYDDA's logo" /></a>
 		</p>
+		cc
 		Copyright &copy; 2017-{{ site.time | date: '%Y' }}, HYDDA Partners
 	</div>
 
