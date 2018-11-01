@@ -1,57 +1,23 @@
 ---
-layout: timeline
-title: News
-menu: news
+title: HYDDA
+layout: default
 ---
+<div class="home">
 
-<div class="timeline">
-<!-- *********  -->
-<div class="container right">
+  <h2 class="alt-h2">News</h2>
 
-<div class="content">
-
-**05/09/2018** réunion de fin sprint7
-
-
-</div>
-
-</div>
-<!-- *********  -->
-<div class="container left">
-
-<div class="content">
-
-Réunion plénière à Nantes 25-26 Juin 2018. 
+  <ul class="list-style-none blog-posts-list-hydda">
+    {% for post in site.posts %}
+      <li>
+        <a class="alt-h3" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="float-right ml-2">{{ post.date | date: "%b %d, %Y" }}</span>
+        {% if post.tags.first == 'index' %}
+          {% for tag in post.tags offset:1 %}
+            <span class="float-right Label bg-hydda mt-3 mr-1">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 
 </div>
-</div>
-<!-- *********  -->
-
-<div class="container right">
-
-<div class="content">
-
-Réunion de fin de Sprint 6
-
-
-</div>
-
-</div>
-<!-- *********  -->
-
-<div class="container left">
-
-<div class="content">
-
-Le papier "XXXX" a été accepté à la conférence XXXXX.
-
-</div>
-
-</div>
-<!-- *********  -->
-
-</div>
-
-
-
-

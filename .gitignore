@@ -1,0 +1,12 @@
+_site
+tmp
+Gemfile.lock
+
+*.iml
+.project
+Thumbs.db
+.DS_Store
+*~
+
+!.gitkeep
+swagger/swagger-ui.js

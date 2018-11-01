@@ -1,0 +1,45 @@
+.btn-hydda {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  padding: 0.75rem 1rem;
+}
+
+.btn-hydda:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon-hydda {
+  vertical-align: middle;
+}
+
+.icon-hydda-small {
+  width: 150px;
+  height: 92px;
+}
+
+.content-hydda {
+  max-width: none !important;
+  padding: 0rem !important;
+}
+
+p {
+	text-align: justify;
+}
+
+.blog-posts-list-hydda {
+  line-height: 50px;
+}
+
+.bg-hydda {
+  background-color:#400c7c !important}

@@ -1,14 +1,13 @@
 ---
-layout: page
+layout: default
 title: Liens utiles du projet HYDDA
-menu: links
 ---
 
 ## Dépôt GIT
 
-* gitlab UGA  ......
+* [Gitlab UGA](https://gricad-gitlab.univ-grenoble-alpes.fr/hydda)
 
-## Sources
+## Autres Sources
 
 
 ## Réseaux Sociaux

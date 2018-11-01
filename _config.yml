@@ -1,9 +1,4 @@
-encoding: utf-8
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
+theme: jekyll-theme-cayman
+title: HYDDA
+description: HYbrid Deployment for Data Analytics.
 
-gems: [ "jemoji" ]

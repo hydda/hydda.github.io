@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: default
 title: Publications
-menu: publications
 ---
 
 Les articles publiés dans le cadre du projet HYDDA sont :
