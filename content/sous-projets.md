@@ -22,7 +22,7 @@ Le rôle du SP4 sera de fournir une plate-forme matérielle permettant d'expéri
 L'objectif de ce SP est de réaliser le développement de l’infrastructure hybride.
 Pour cela, nous mettrons en place les plateformes HPC et Cloud (OpenStack dans un premier temps) qui accueilleront les cas d’usage.
 Nous développerons ensuite les adaptations et évolutions nécessaires à l’hybridation de l’infrastructure, concernant essenciellement les points suivants :
-* Orchestration/management au travers de Janus
+* Orchestration/management au travers de [Yorc](https://ystia.github.io)
 * Connecteur pour le support du déploiement sur HPC
 * Connecteur pour le support du déploiement sur Cloud OpenStack
 * Portabilité des composants Big Data
