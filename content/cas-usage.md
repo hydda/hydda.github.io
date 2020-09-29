@@ -3,7 +3,11 @@ layout: default
 title: Cas d'usage
 ---
 
-Afin de valider le projet HYDDA, plusieurs cas d'usage sont traités:
+## Index
+
+- [Traitement médical personnalisé du futur](#traitement-médical-personnalisé-du-futur)
+- [Analyse intelligente de résultats CFD pour la conception aéronautique](#analyse-intelligente-de-résultats-cfd-pour-la-conception-aéronautique)
+- [Prédiction de pannes pour le Data Center](#prédiction-de-pannes-pour-le-data-center)
 
 # Traitement médical personnalisé du futur
 
