@@ -1,6 +1,6 @@
 _site
 tmp
-Gemfile.lock
+*.lock
 
 *.iml
 .project
