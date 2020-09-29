@@ -8,7 +8,7 @@ Les articles publiés dans le cadre du projet HYDDA sont :
 ### 2021
 
 * LogFlow : Simplified Log Analysis for Large Scale Systems (Conférence internationale ICDCN 2021)
-* CPU overheating prediction in HPC systems (soumission à journal Concurrency and Computation)
+* CPU overheating prediction in HPC systems (soumission au journal Concurrency and Computation)
 
 ### 2020
 
