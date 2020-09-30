@@ -19,7 +19,16 @@ title: Cas d'usage
 
 ## Présentation du cas d'usage
 
+A travers son cas d'usage l'ICO souhaite mettre en place des workflows d'analyses pour ses compartiments biologiques (génomique, transcriptomique et protéomique). La puissance de calcul est l'élément clé pour obtenir un temps de réponse compatible avec les délais imposés par la clinique des patients. L’apport d’une solution de calcul haute performance pour traiter ces workflows est un atout non négligeable.
+
 ## Résultats obtenus
+
+Nous avons mis en place sur la plateforme HYDDA les 3 workflows souhaités au départ du projet :
+
+- Génomique : intégré pleinement à la plateforme HYDDA via A4C et Yorc. Démonstrateur de notre cas d’usage
+- Transcriptomique : workflow utilisant le volet Cloud de la plateforme et ayant permis une valorisation scientifique au cours du projet
+- Protéomique : workflow utilisant le volet Cloud de la plateforme avec une composante Windows mise en place. A permis une validation scientifique sur une cohorte de 300 patientes.
+
 
 # Analyse intelligente de résultats CFD pour la conception aéronautique
 
